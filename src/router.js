@@ -14,13 +14,13 @@ export const router = new VueRouter({
         path: '/stocks',
         name: 'stocks',
         component (resolve) {
-            require(['./components/stocks.vue'], resolve)
+            require(['./components/stocks/stocks.vue'], resolve)
         }
     }, {
         path: '/portfolio',
         name: 'portfolio',
         component (resolve) {
-            require(['./components/portfolio.vue'], resolve)
+            require(['./components/portfolio/portfolio.vue'], resolve)
         }
     }]
 })

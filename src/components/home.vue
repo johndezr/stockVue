@@ -4,16 +4,18 @@
         <h6>You may Save & Load your Data</h6>
         <h6>Click on 'End Day' to begin a new Day!</h6>
         <hr>
-        <h4>Your Funds: ${{founds}}</h4>
+        <h4>Your Funds: ${{ founds.toLocaleString() }}</h4>
     </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 export default {
-    computed: mapState([
-        'founds'
-    ])
+    computed:{
+        ...mapGetters({
+            founds: 'getFounds'
+        })
+    }
 }
 </script>
 

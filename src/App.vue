@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .navbar{
         margin-top: 40px;
     }
